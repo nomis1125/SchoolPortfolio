@@ -1,0 +1,5 @@
+[0] Config.pm:312> INFO - This is Biber 2.15 (beta)
+[0] Config.pm:315> INFO - Logfile is 'project-paper.blg'
+[109] biber-MSWIN64:330> INFO - === 
+[441] Utils.pm:411> ERROR - Cannot find 'project-paper.bcf'!
+[441] Biber.pm:132> INFO - ERRORS: 1

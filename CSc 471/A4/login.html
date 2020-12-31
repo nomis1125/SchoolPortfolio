@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>EZProxy - Electronic Resource Login</title>
+ <link rel="stylesheet" type="text/css" media="all" href="/public/banner.css">
+ <link rel="stylesheet" type="text/css" media="all" href="/public/ezproxy.css">
+ <script type="text/javascript" src="/public/loginpage.js"></script>
+</head>
+<body>
+<script>
+  // check for the CAS cookie
+  var sso=get_cookie("uvic_sso");
+  if (sso != "") {
+    window.location = "https://login.ezproxy.library.uvic.ca/login?auth=viaCAS&qurl=https%3a%2f%2flearning.oreilly.com%2flibrary%2fview%2fopengl-programming-guide%2f9780134495514%2f";
+  }
+</script>
+<div id="custom_header"><div class="wrapper" id="banner">
+<div style="position:absolute; left: 5px; top: 28px;">
+<a href="http://www.uvic.ca/" id="logo"><span>University<br>of Victoria</span></a>
+</div>
+<div style="position:absolute; left: 176px; top: 28px;">
+<a href="http://www.uvic.ca/library/" id="unit"><span>Libraries</span></a>
+</div>
+<div style="position:absolute; right: 0px; top: 0px; height: 96px; width:200px;" class="edge">&nbsp;</div>
+</div>
+</div>
+<p>
+<br/>
+<br/>
+UVic students, faculty, staff, alumni and other Netlink ID holders, please:
+</p>
+<p>
+<div align="center">
+<a href="/login?auth=viacas&qurl=https%3a%2f%2flearning.oreilly.com%2flibrary%2fview%2fopengl-programming-guide%2f9780134495514%2f"><img src="/public/signin.png" alt="Sign in to UVic" title="Sign in to UVic" /></a>
+</div>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<p>
+Other account holders (AskAway librarians, partner college librarians, etc.) please
+<a href="#" onclick="toggle_visible('alt_login_form');">sign in here</a>.
+</p>
+<p><br/></p>
+<div id="alt_login_form" style="display:none;">
+<form action="/login" method="post">
+<input type="hidden" name="url" value="https://learning.oreilly.com/library/view/opengl-programming-guide/9780134495514/" />
+<center>
+<table class="alternate-login">
+ <tr>
+  <td>Username:</td>
+  <td><input type="text" name="user" /></td>
+ </tr>
+ <tr>
+  <td>Password:</td>
+  <td><input type="password" name="pass" /></td>
+  <td>&nbsp;</td>
+  <td><input type="submit" value="Login" /></td>
+ </tr>
+</table>
+</form>
+</div>
+</body>
+</html>

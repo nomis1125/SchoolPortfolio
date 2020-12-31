@@ -1,0 +1,4 @@
+#pragma once
+
+static constexpr char const* ShaderPath{"@ASSIGNMENT_ROOT@/"};
+static constexpr char const* DataPath{"@ASSIGNMENT_ROOT@/"};

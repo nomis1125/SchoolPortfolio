@@ -1,0 +1,18 @@
+﻿  SampleParticle.cpp
+  SampleGravitySimulator.cpp
+  ResourceManager.cpp
+  emitter.cpp
+cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  Orbit.cpp
+  myScene.cpp
+  GlobalResourceManager.cpp
+  Dots.cpp
+  BaseSystem.cpp
+  BaseSimulator.cpp
+  BaseObject.cpp
+  ballobj.cpp
+  animTcl.cpp
+  anim.cpp
+  Generating Code...
+F:\School Portfolio\CSC473\Simon_Walker_Assignment2\A2\ComputerAnimationTemplate2019\anim\emitter.cpp(362,5): warning C4551: function call missing argument list
+  anim.vcxproj -> F:\School Portfolio\CSC473\Simon_Walker_Assignment2\A2\ComputerAnimationTemplate2019\anim\../Build\anim.exe
